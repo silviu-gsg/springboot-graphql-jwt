@@ -1,1 +1,4 @@
-
+graphql:
+  spqr:
+    gui:
+      enabled: true

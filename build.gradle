@@ -17,8 +17,16 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	implementation 'io.leangen.graphql:graphql-spqr-spring-boot-starter:0.0.4'
+
 	runtimeOnly 'com.h2database:h2'
+
+	compileOnly 'org.projectlombok:lombok:1.18.18'
+	annotationProcessor 'org.projectlombok:lombok'
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.security:spring-security-test'
 }
 
 test {
