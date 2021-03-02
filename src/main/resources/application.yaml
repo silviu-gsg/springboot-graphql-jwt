@@ -2,3 +2,9 @@ graphql:
   spqr:
     gui:
       enabled: true
+
+application:
+  jwt:
+    secretKey: "aVerySecureAndSecretKeyThatYouShouldNotPushToGit"
+    tokenPrefix: "Bearer "
+    tokenExpirationAfterHours: 2
