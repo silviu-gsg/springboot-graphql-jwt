@@ -1,4 +1,4 @@
-package com.gsg.demo.springbootgraphqljwt.authentication;
+package com.gsg.demo.authentication;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

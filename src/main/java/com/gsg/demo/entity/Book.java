@@ -1,4 +1,4 @@
-package com.gsg.demo.springbootgraphqljwt.entity;
+package com.gsg.demo.entity;
 
 import io.leangen.graphql.annotations.GraphQLQuery;
 import lombok.AllArgsConstructor;

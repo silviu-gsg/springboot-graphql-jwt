@@ -1,7 +1,7 @@
-package com.gsg.demo.springbootgraphqljwt.service;
+package com.gsg.demo.service;
 
-import com.gsg.demo.springbootgraphqljwt.entity.Book;
-import com.gsg.demo.springbootgraphqljwt.repository.BookRepository;
+import com.gsg.demo.entity.Book;
+import com.gsg.demo.repository.BookRepository;
 import io.leangen.graphql.annotations.GraphQLArgument;
 import io.leangen.graphql.annotations.GraphQLMutation;
 import io.leangen.graphql.annotations.GraphQLQuery;

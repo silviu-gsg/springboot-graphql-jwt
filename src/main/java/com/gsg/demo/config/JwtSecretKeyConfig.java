@@ -1,4 +1,4 @@
-package com.gsg.demo.springbootgraphqljwt.config;
+package com.gsg.demo.config;
 
 import io.jsonwebtoken.security.Keys;
 import lombok.AllArgsConstructor;

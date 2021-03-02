@@ -1,6 +1,6 @@
-package com.gsg.demo.springbootgraphqljwt.authentication;
+package com.gsg.demo.authentication;
 
-import com.gsg.demo.springbootgraphqljwt.repository.UserDetailsRepository;
+import com.gsg.demo.repository.UserDetailsRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

@@ -1,4 +1,4 @@
-package com.gsg.demo.springbootgraphqljwt.config;
+package com.gsg.demo.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.context.annotation.Bean;

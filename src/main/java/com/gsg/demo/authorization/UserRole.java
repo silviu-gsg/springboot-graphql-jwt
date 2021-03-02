@@ -1,4 +1,4 @@
-package com.gsg.demo.springbootgraphqljwt.authorization;
+package com.gsg.demo.authorization;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -10,16 +10,12 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import static com.gsg.demo.springbootgraphqljwt.authorization.UserPermission.BOOK_DELETE;
-import static com.gsg.demo.springbootgraphqljwt.authorization.UserPermission.BOOK_READ;
-import static com.gsg.demo.springbootgraphqljwt.authorization.UserPermission.BOOK_WRITE;
-
 @AllArgsConstructor
 @Getter
 public enum UserRole {
-    BOOK_READER(new HashSet<>(Collections.singletonList(BOOK_READ))),
-    BOOK_WRITER(new HashSet<>(Arrays.asList(BOOK_READ, BOOK_WRITE))),
-    BOOK_ERASER(new HashSet<>(Arrays.asList(BOOK_READ, BOOK_WRITE, BOOK_DELETE)));
+    BOOK_READER(new HashSet<>(Collections.singletonList(UserPermission.BOOK_READ))),
+    BOOK_WRITER(new HashSet<>(Arrays.asList(UserPermission.BOOK_READ, UserPermission.BOOK_WRITE))),
+    BOOK_ERASER(new HashSet<>(Arrays.asList(UserPermission.BOOK_READ, UserPermission.BOOK_WRITE, UserPermission.BOOK_DELETE)));
 
     private final Set<UserPermission> permissions;
 

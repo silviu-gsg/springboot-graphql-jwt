@@ -1,6 +1,6 @@
-package com.gsg.demo.springbootgraphqljwt.filter;
+package com.gsg.demo.filter;
 
-import com.gsg.demo.springbootgraphqljwt.config.JwtConfig;
+import com.gsg.demo.config.JwtConfig;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.JwtException;

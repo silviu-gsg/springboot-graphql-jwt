@@ -1,4 +1,4 @@
-package com.gsg.demo.springbootgraphqljwt.config;
+package com.gsg.demo.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

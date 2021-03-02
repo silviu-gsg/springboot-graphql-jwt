@@ -31,16 +31,11 @@ It will start the Spring Boot module on port 8080 and it will use the embedded i
 
 ### Notes
 
-After the server is up and running, you can run GraphQL queries / mutations without authentication / authorization at:
-
-```
-http://localhost:8080/gui
-```
-To test the JWT auth flows you must obtain a JWT token via a POST call at:
+After the server is up and running, you can test the JWT auth flows by obtaining a JWT token via a POST call at:
 ```
 http://localhost:8080/login
 ```
-with username & password in the request body - see demo predefined users in
+with username & password in the request body - see demo predefined users in:
 ``
 UserDetailsRepository.java
 ``

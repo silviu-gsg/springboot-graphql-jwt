@@ -1,7 +1,7 @@
-package com.gsg.demo.springbootgraphqljwt.service;
+package com.gsg.demo.service;
 
-import com.gsg.demo.springbootgraphqljwt.entity.Book;
-import com.gsg.demo.springbootgraphqljwt.repository.BookRepository;
+import com.gsg.demo.entity.Book;
+import com.gsg.demo.repository.BookRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Order;

@@ -1,4 +1,4 @@
-package com.gsg.demo.springbootgraphqljwt.security;
+package com.gsg.demo.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

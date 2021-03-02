@@ -1,6 +1,6 @@
-package com.gsg.demo.springbootgraphqljwt.repository;
+package com.gsg.demo.repository;
 
-import com.gsg.demo.springbootgraphqljwt.entity.Book;
+import com.gsg.demo.entity.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

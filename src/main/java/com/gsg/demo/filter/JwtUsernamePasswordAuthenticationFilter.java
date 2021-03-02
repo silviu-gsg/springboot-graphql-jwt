@@ -1,8 +1,8 @@
-package com.gsg.demo.springbootgraphqljwt.filter;
+package com.gsg.demo.filter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.gsg.demo.springbootgraphqljwt.config.JwtConfig;
-import com.gsg.demo.springbootgraphqljwt.dto.UsernamePasswordAuthenticationRequest;
+import com.gsg.demo.config.JwtConfig;
+import com.gsg.demo.dto.UsernamePasswordAuthenticationRequest;
 import io.jsonwebtoken.Jwts;
 import lombok.AllArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;

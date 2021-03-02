@@ -1,10 +1,10 @@
-package com.gsg.demo.springbootgraphqljwt;
+package com.gsg.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringbootGraphqlJwtApplicationTests {
+class SpringGraphqlJwtApplicationTests {
 
 	@Test
 	void contextLoads() {

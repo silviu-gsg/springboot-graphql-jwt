@@ -1,4 +1,4 @@
-package com.gsg.demo.springbootgraphqljwt.dto;
+package com.gsg.demo.dto;
 
 import lombok.Data;
 

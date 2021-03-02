@@ -1,10 +1,10 @@
-package com.gsg.demo.springbootgraphqljwt.security;
+package com.gsg.demo.security;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.gsg.demo.springbootgraphqljwt.authentication.DefaultUserDetailsService;
-import com.gsg.demo.springbootgraphqljwt.config.JwtConfig;
-import com.gsg.demo.springbootgraphqljwt.filter.JwtTokenVerifierFilter;
-import com.gsg.demo.springbootgraphqljwt.filter.JwtUsernamePasswordAuthenticationFilter;
+import com.gsg.demo.config.JwtConfig;
+import com.gsg.demo.filter.JwtTokenVerifierFilter;
+import com.gsg.demo.authentication.DefaultUserDetailsService;
+import com.gsg.demo.filter.JwtUsernamePasswordAuthenticationFilter;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,9 +19,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 import javax.crypto.SecretKey;
 
-import static com.gsg.demo.springbootgraphqljwt.authorization.UserRole.BOOK_ERASER;
-import static com.gsg.demo.springbootgraphqljwt.authorization.UserRole.BOOK_READER;
-import static com.gsg.demo.springbootgraphqljwt.authorization.UserRole.BOOK_WRITER;
+import static com.gsg.demo.authorization.UserRole.BOOK_ERASER;
+import static com.gsg.demo.authorization.UserRole.BOOK_READER;
+import static com.gsg.demo.authorization.UserRole.BOOK_WRITER;
 
 
 @AllArgsConstructor
@@ -46,7 +46,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .addFilter(new JwtUsernamePasswordAuthenticationFilter(authenticationManager(), jwtConfig, secretKey, objectMapper))
                 .addFilterAfter(new JwtTokenVerifierFilter(secretKey, jwtConfig), JwtUsernamePasswordAuthenticationFilter.class)
                 .authorizeRequests()
-                .antMatchers("/gui").permitAll()
                 .antMatchers("/graphql").hasAnyRole(BOOK_READER.name(), BOOK_WRITER.name(), BOOK_ERASER.name())
                 .anyRequest()
                 .authenticated();

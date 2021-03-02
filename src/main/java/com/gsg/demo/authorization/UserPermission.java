@@ -1,4 +1,4 @@
-package com.gsg.demo.springbootgraphqljwt.authorization;
+package com.gsg.demo.authorization;
 
 public enum UserPermission {
     BOOK_READ("book:read"),
